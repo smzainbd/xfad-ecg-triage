@@ -88,15 +88,4 @@ Both datasets evaluated in this study—the **MIT-BIH Arrhythmia Database v1.0.0
 
 ---
 
-## Citation
 
-If you find this repository, protocol, or negative-result benchmark useful in your research, please cite our paper:
-
-```bibtex
-@article{mahamud2026xfad,
-  title={Does Explainability Improve False-Alarm Triage in ECG Monitoring? A Pre-Registered, Budget-Matched Evaluation on MIT-BIH and PTB-XL},
-  author={Mahamud, Eram and Zain, S M},
-  journal={SN Computer Science},
-  year={2026}
-}
-```
