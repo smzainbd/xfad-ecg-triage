@@ -2,105 +2,306 @@
   "loro_ds1_val_5records": {
     "pool_name": "DS1_5_val_records",
     "n_records": 5,
-    "n_total_alarms": 12,
+    "n_total_alarms": 815,
     "high_threshold_summary": {
-      "mean": 0.653,
-      "sd": 0.0,
-      "median": 0.653,
-      "q75_conservative": 0.653,
-      "q90_conservative": 0.653,
-      "max": 0.653
+      "mean": 0.641084188748464,
+      "sd": 0.05756098390967753,
+      "median": 0.6485483758930258,
+      "q75_conservative": 0.6680009758580072,
+      "q90_conservative": 0.697913195677015,
+      "max": 0.7178546755563536
     },
-    "low_threshold_mean": 0.523,
-    "oof_pooled_fa_reduction_pct": 0.0,
-    "oof_pooled_sensitivity_loss_pct": 0.0,
-    "pct_folds_meeting_budget": 0.0,
-    "folds": []
-  },
-  "loro_ds1_all_22records": {
-    "pool_name": "DS1_all_22_records",
-    "n_records": 12,
-    "n_total_alarms": 19,
-    "high_threshold_summary": {
-      "mean": 0.4152662652392585,
-      "sd": 0.004564441608390888,
-      "median": 0.4144032667648116,
-      "q75_conservative": 0.41900587958055646,
-      "q90_conservative": 0.42078116631371615,
-      "max": 0.42131600739976627
-    },
-    "low_threshold_mean": 0.404648870767872,
-    "oof_pooled_fa_reduction_pct": 0.0,
-    "oof_pooled_sensitivity_loss_pct": 0.0,
-    "pct_folds_meeting_budget": 100.0,
+    "low_threshold_mean": 0.5269544559321531,
+    "oof_pooled_fa_reduction_pct": 23.26,
+    "oof_pooled_sensitivity_loss_pct": 4.94,
+    "pct_folds_meeting_budget": 80.0,
     "folds": [
       {
-        "held_out_record": "112",
-        "n_alarms": 1,
-        "n_fa": 0,
-        "n_ta": 1,
-        "calibrated_high": 0.42131600739976627,
-        "oof_fa_reduction_pct": 0.0,
+        "held_out_record": "119",
+        "n_alarms": 432,
+        "n_fa": 1,
+        "n_ta": 431,
+        "calibrated_high": 0.7178546755563536,
+        "oof_fa_reduction_pct": 100.0,
         "oof_sensitivity_loss_pct": 0.0,
         "meets_2pct_budget": true
       },
       {
-        "held_out_record": "114",
-        "n_alarms": 1,
-        "n_fa": 0,
-        "n_ta": 1,
-        "calibrated_high": 0.41204166065467807,
-        "oof_fa_reduction_pct": 0.0,
-        "oof_sensitivity_loss_pct": 0.0,
-        "meets_2pct_budget": true
-      },
-      {
-        "held_out_record": "115",
-        "n_alarms": 1,
-        "n_fa": 0,
-        "n_ta": 1,
-        "calibrated_high": 0.4099548905492078,
-        "oof_fa_reduction_pct": 0.0,
-        "oof_sensitivity_loss_pct": 0.0,
-        "meets_2pct_budget": true
-      },
-      {
-        "held_out_record": "118",
-        "n_alarms": 1,
-        "n_fa": 0,
-        "n_ta": 1,
-        "calibrated_high": 0.4111362721452324,
-        "oof_fa_reduction_pct": 0.0,
-        "oof_sensitivity_loss_pct": 0.0,
-        "meets_2pct_budget": true
-      },
-      {
-        "held_out_record": "203",
-        "n_alarms": 1,
-        "n_fa": 0,
-        "n_ta": 1,
-        "calibrated_high": 0.4144032667648116,
-        "oof_fa_reduction_pct": 0.0,
+        "held_out_record": "124",
+        "n_alarms": 78,
+        "n_fa": 47,
+        "n_ta": 31,
+        "calibrated_high": 0.599682530739905,
+        "oof_fa_reduction_pct": 2.13,
         "oof_sensitivity_loss_pct": 0.0,
         "meets_2pct_budget": true
       },
       {
         "held_out_record": "215",
-        "n_alarms": 2,
+        "n_alarms": 90,
+        "n_fa": 22,
+        "n_ta": 68,
+        "calibrated_high": 0.6680009758580072,
+        "oof_fa_reduction_pct": 40.91,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "220",
+        "n_alarms": 7,
         "n_fa": 0,
-        "n_ta": 2,
-        "calibrated_high": 0.41758715357143017,
+        "n_ta": 7,
+        "calibrated_high": 0.6485483758930258,
         "oof_fa_reduction_pct": 0.0,
         "oof_sensitivity_loss_pct": 0.0,
         "meets_2pct_budget": true
       },
       {
-        "held_out_record": "230",
-        "n_alarms": 1,
-        "n_fa": 0,
+        "held_out_record": "223",
+        "n_alarms": 208,
+        "n_fa": 16,
+        "n_ta": 192,
+        "calibrated_high": 0.5713343856950283,
+        "oof_fa_reduction_pct": 56.25,
+        "oof_sensitivity_loss_pct": 18.75,
+        "meets_2pct_budget": false
+      }
+    ]
+  },
+  "loro_ds1_all_22records": {
+    "pool_name": "DS1_all_22_records",
+    "n_records": 22,
+    "n_total_alarms": 4365,
+    "high_threshold_summary": {
+      "mean": 0.6923133156390837,
+      "sd": 0.023978298556169713,
+      "median": 0.6870437448794755,
+      "q75_conservative": 0.6905456191312516,
+      "q90_conservative": 0.6993157287884053,
+      "max": 0.7721768957824285
+    },
+    "low_threshold_mean": 0.5718460073278667,
+    "oof_pooled_fa_reduction_pct": 25.1,
+    "oof_pooled_sensitivity_loss_pct": 2.84,
+    "pct_folds_meeting_budget": 72.7,
+    "folds": [
+      {
+        "held_out_record": "101",
+        "n_alarms": 11,
+        "n_fa": 11,
+        "n_ta": 0,
+        "calibrated_high": 0.6908466675194961,
+        "oof_fa_reduction_pct": 81.82,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "106",
+        "n_alarms": 482,
+        "n_fa": 28,
+        "n_ta": 454,
+        "calibrated_high": 0.684976943419908,
+        "oof_fa_reduction_pct": 17.86,
+        "oof_sensitivity_loss_pct": 0.88,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "108",
+        "n_alarms": 189,
+        "n_fa": 181,
+        "n_ta": 8,
+        "calibrated_high": 0.6657658513510913,
+        "oof_fa_reduction_pct": 39.23,
+        "oof_sensitivity_loss_pct": 12.5,
+        "meets_2pct_budget": false
+      },
+      {
+        "held_out_record": "109",
+        "n_alarms": 49,
+        "n_fa": 13,
+        "n_ta": 36,
+        "calibrated_high": 0.6905220853156024,
+        "oof_fa_reduction_pct": 30.77,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "112",
+        "n_alarms": 17,
+        "n_fa": 17,
+        "n_ta": 0,
+        "calibrated_high": 0.6905534637364679,
+        "oof_fa_reduction_pct": 35.29,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "114",
+        "n_alarms": 15,
+        "n_fa": 14,
         "n_ta": 1,
-        "calibrated_high": 0.42042460558968275,
+        "calibrated_high": 0.6877878444054167,
+        "oof_fa_reduction_pct": 85.71,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "115",
+        "n_alarms": 4,
+        "n_fa": 4,
+        "n_ta": 0,
+        "calibrated_high": 0.6869690117017208,
+        "oof_fa_reduction_pct": 75.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "116",
+        "n_alarms": 43,
+        "n_fa": 23,
+        "n_ta": 20,
+        "calibrated_high": 0.6824259794970913,
+        "oof_fa_reduction_pct": 43.48,
+        "oof_sensitivity_loss_pct": 5.0,
+        "meets_2pct_budget": false
+      },
+      {
+        "held_out_record": "118",
+        "n_alarms": 20,
+        "n_fa": 10,
+        "n_ta": 10,
+        "calibrated_high": 0.6864842022573898,
+        "oof_fa_reduction_pct": 40.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "119",
+        "n_alarms": 432,
+        "n_fa": 1,
+        "n_ta": 431,
+        "calibrated_high": 0.7528357291850143,
+        "oof_fa_reduction_pct": 100.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "122",
+        "n_alarms": 2,
+        "n_fa": 2,
+        "n_ta": 0,
+        "calibrated_high": 0.6874162242674572,
+        "oof_fa_reduction_pct": 50.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "124",
+        "n_alarms": 78,
+        "n_fa": 47,
+        "n_ta": 31,
+        "calibrated_high": 0.6803049441512751,
+        "oof_fa_reduction_pct": 21.28,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "201",
+        "n_alarms": 246,
+        "n_fa": 31,
+        "n_ta": 215,
+        "calibrated_high": 0.6999492640976548,
+        "oof_fa_reduction_pct": 3.23,
+        "oof_sensitivity_loss_pct": 3.72,
+        "meets_2pct_budget": false
+      },
+      {
+        "held_out_record": "203",
+        "n_alarms": 820,
+        "n_fa": 488,
+        "n_ta": 332,
+        "calibrated_high": 0.7721768957824285,
+        "oof_fa_reduction_pct": 8.61,
+        "oof_sensitivity_loss_pct": 0.9,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "205",
+        "n_alarms": 38,
+        "n_fa": 1,
+        "n_ta": 37,
+        "calibrated_high": 0.6884442187706403,
+        "oof_fa_reduction_pct": 100.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "207",
+        "n_alarms": 259,
+        "n_fa": 57,
+        "n_ta": 202,
+        "calibrated_high": 0.6812848750363248,
+        "oof_fa_reduction_pct": 56.14,
+        "oof_sensitivity_loss_pct": 3.47,
+        "meets_2pct_budget": false
+      },
+      {
+        "held_out_record": "208",
+        "n_alarms": 1087,
+        "n_fa": 42,
+        "n_ta": 1045,
+        "calibrated_high": 0.6802918532243677,
+        "oof_fa_reduction_pct": 30.95,
+        "oof_sensitivity_loss_pct": 3.35,
+        "meets_2pct_budget": false
+      },
+      {
+        "held_out_record": "209",
+        "n_alarms": 257,
+        "n_fa": 33,
+        "n_ta": 224,
+        "calibrated_high": 0.6713831722441117,
+        "oof_fa_reduction_pct": 30.3,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "215",
+        "n_alarms": 90,
+        "n_fa": 22,
+        "n_ta": 68,
+        "calibrated_high": 0.6936139110051598,
+        "oof_fa_reduction_pct": 63.64,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "220",
+        "n_alarms": 7,
+        "n_fa": 0,
+        "n_ta": 7,
+        "calibrated_high": 0.6871184780572301,
         "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "223",
+        "n_alarms": 208,
+        "n_fa": 16,
+        "n_ta": 192,
+        "calibrated_high": 0.6847771818267201,
+        "oof_fa_reduction_pct": 56.25,
+        "oof_sensitivity_loss_pct": 18.23,
+        "meets_2pct_budget": false
+      },
+      {
+        "held_out_record": "230",
+        "n_alarms": 11,
+        "n_fa": 11,
+        "n_ta": 0,
+        "calibrated_high": 0.684964147207276,
+        "oof_fa_reduction_pct": 54.55,
         "oof_sensitivity_loss_pct": 0.0,
         "meets_2pct_budget": true
       }
@@ -109,72 +310,72 @@
   "ds2_transfer_comparison": [
     {
       "scheme": "Original 5-Record DS1 Val (Pre-registered)",
-      "low_threshold": 0.9125,
-      "high_threshold": 0.9127,
-      "ds2_stage_a_fa_red_pct": 50.0,
-      "ds2_stage_a_sens_loss_pct": 0.0,
-      "ds2_stage_ab_fa_red_pct": 50.0,
+      "low_threshold": 0.5228,
+      "high_threshold": 0.6525,
+      "ds2_stage_a_fa_red_pct": 21.89,
+      "ds2_stage_a_sens_loss_pct": 12.41,
+      "ds2_stage_ab_fa_red_pct": 30.67,
       "ds2_stage_ab_fa_red_ci95": [
-        0.0,
-        100.0
+        17.0,
+        49.8
       ],
-      "ds2_stage_ab_sens_loss_pct": 0.0,
-      "meets_2pct_budget_on_ds2": true
+      "ds2_stage_ab_sens_loss_pct": 13.59,
+      "meets_2pct_budget_on_ds2": false
     },
     {
       "scheme": "LORO 5-Record Conservative (90th pct high threshold)",
-      "low_threshold": 0.9125,
-      "high_threshold": 0.653,
-      "ds2_stage_a_fa_red_pct": 50.0,
-      "ds2_stage_a_sens_loss_pct": 12.5,
-      "ds2_stage_ab_fa_red_pct": 50.0,
+      "low_threshold": 0.5228,
+      "high_threshold": 0.6979,
+      "ds2_stage_a_fa_red_pct": 14.25,
+      "ds2_stage_a_sens_loss_pct": 5.29,
+      "ds2_stage_ab_fa_red_pct": 26.57,
       "ds2_stage_ab_fa_red_ci95": [
-        0.0,
-        100.0
+        13.9,
+        45.9
       ],
-      "ds2_stage_ab_sens_loss_pct": 12.5,
+      "ds2_stage_ab_sens_loss_pct": 6.93,
       "meets_2pct_budget_on_ds2": false
     },
     {
       "scheme": "Pooled 22-Record Full DS1 Calibration",
-      "low_threshold": 0.4041,
-      "high_threshold": 0.4145,
-      "ds2_stage_a_fa_red_pct": 0.0,
-      "ds2_stage_a_sens_loss_pct": 37.5,
-      "ds2_stage_ab_fa_red_pct": 0.0,
+      "low_threshold": 0.5696,
+      "high_threshold": 0.6878,
+      "ds2_stage_a_fa_red_pct": 33.87,
+      "ds2_stage_a_sens_loss_pct": 18.8,
+      "ds2_stage_ab_fa_red_pct": 40.76,
       "ds2_stage_ab_fa_red_ci95": [
-        0.0,
-        0.0
+        25.4,
+        60.1
       ],
-      "ds2_stage_ab_sens_loss_pct": 37.5,
+      "ds2_stage_ab_sens_loss_pct": 19.53,
       "meets_2pct_budget_on_ds2": false
     },
     {
       "scheme": "LORO 22-Record DS1 Conservative (75th pct high threshold)",
-      "low_threshold": 0.4041,
-      "high_threshold": 0.419,
-      "ds2_stage_a_fa_red_pct": 0.0,
-      "ds2_stage_a_sens_loss_pct": 12.5,
-      "ds2_stage_ab_fa_red_pct": 0.0,
+      "low_threshold": 0.5696,
+      "high_threshold": 0.6905,
+      "ds2_stage_a_fa_red_pct": 32.9,
+      "ds2_stage_a_sens_loss_pct": 18.25,
+      "ds2_stage_ab_fa_red_pct": 40.19,
       "ds2_stage_ab_fa_red_ci95": [
-        0.0,
-        0.0
+        24.8,
+        59.7
       ],
-      "ds2_stage_ab_sens_loss_pct": 12.5,
+      "ds2_stage_ab_sens_loss_pct": 19.07,
       "meets_2pct_budget_on_ds2": false
     },
     {
       "scheme": "LORO 22-Record DS1 Conservative (90th pct high threshold)",
-      "low_threshold": 0.4041,
-      "high_threshold": 0.4208,
-      "ds2_stage_a_fa_red_pct": 0.0,
-      "ds2_stage_a_sens_loss_pct": 12.5,
-      "ds2_stage_ab_fa_red_pct": 0.0,
+      "low_threshold": 0.5696,
+      "high_threshold": 0.6993,
+      "ds2_stage_a_fa_red_pct": 30.16,
+      "ds2_stage_a_sens_loss_pct": 15.6,
+      "ds2_stage_ab_fa_red_pct": 38.31,
       "ds2_stage_ab_fa_red_ci95": [
-        0.0,
-        0.0
+        23.3,
+        57.4
       ],
-      "ds2_stage_ab_sens_loss_pct": 12.5,
+      "ds2_stage_ab_sens_loss_pct": 16.42,
       "meets_2pct_budget_on_ds2": false
     }
   ]
