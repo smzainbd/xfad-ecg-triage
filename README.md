@@ -64,7 +64,7 @@ xfad-ecg-triage/
 ### 1. Environment Setup
 
 ```bash
-git clone https://github.com/smzain/xfad-ecg-triage.git
+git clone https://github.com/smzainbd/xfad-ecg-triage.git
 cd xfad-ecg-triage
 pip install -r requirements.txt
 ```
