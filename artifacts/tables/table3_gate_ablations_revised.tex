@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Incremental feature and Stage-B escalation ablation on MIT-BIH DS1 validation ($n=815$) and held-out DS2 test alarms ($n=2{,}850$).}
+\label{tab:stage_a_ablations}
+\begin{tabular}{llllll}
+\toprule
+Stage-A Features & Val FA Red.\ (Loss) & Test Stage A FA Red.\ (95\% CI) & Stage A Loss & Test Stage A+B FA Red.\ (95\% CI) & Stage A+B Loss \\
+\midrule
+1-QRS overlap + 1-SQI + 1-confidence & 0.0\% (0.00\%) & 0.0\% (0.0--0.0) & 37.50\% & 0.0\% (0.0--0.0) & 37.50\% \\
+1-SQI + 1-confidence & 0.0\% (0.00\%) & 25.0\% (0.0--91.0) & 0.00\% & 25.0\% (0.0--91.0) & 0.00\% \\
+1-QRS overlap + 1-SQI & 0.0\% (0.00\%) & 0.0\% (0.0--0.0) & 37.50\% & 0.0\% (0.0--0.0) & 37.50\% \\
+1-QRS overlap + 1-confidence & 0.0\% (0.00\%) & 25.0\% (0.0--91.0) & 0.00\% & 25.0\% (0.0--91.0) & 0.00\% \\
+1-SQI & 0.0\% (0.00\%) & 0.0\% (0.0--0.0) & 0.00\% & 0.0\% (0.0--0.0) & 0.00\% \\
+1-QRS overlap & 0.0\% (0.00\%) & 0.0\% (0.0--0.0) & 0.00\% & 0.0\% (0.0--0.0) & 0.00\% \\
+1-confidence & 0.0\% (0.00\%) & 0.0\% (0.0--0.0) & 0.00\% & 0.0\% (0.0--0.0) & 0.00\% \\
+\bottomrule
+\end{tabular}
+\end{table}

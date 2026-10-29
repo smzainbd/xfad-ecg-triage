@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Explainability sanity checks, deletion faithfulness, and physiological localisation on the baseline student ($n=50$ pre-registered and $n=250$ expanded validation beats), reporting mean $\pm$ SD, 95\% bootstrap CIs, and duration-normalized saliency density ($\times$ uniform baseline).}
+\label{tab:explainability_revised}
+\begin{tabular}{llll}
+\toprule
+Check / Metric & $n=10$ (Mean $\pm$ SD, 95\% CI) & $n=20$ (Mean $\pm$ SD, 95\% CI) & Interpretation \\
+\midrule
+Weight-rand.\ Spearman $\rho$ & 0.194 $\pm$ 0.344 (0.019--0.377) & 0.246 $\pm$ 0.357 (0.110--0.403) & pass \\
+Weight-rand.\ Cosine sim. & 0.116 $\pm$ 0.245 (0.000--0.290) & 0.198 $\pm$ 0.312 (0.082--0.335) & inconclusive \\
+Deletion AUC (Grad-CAM) & 0.258 $\pm$ 0.003 (0.256--0.260) & 0.260 $\pm$ 0.006 (0.258--0.262) & faithful vs.\ random \\
+Deletion AUC (random) & 0.260 $\pm$ 0.001 (0.259--0.260) & 0.261 $\pm$ 0.005 (0.259--0.263) & $\Delta=+0.002$ \\
+P-wave mass (14.8\% width) & 7.7\% $\pm$ 8.1\% (0.50$\times$) & 7.8\% $\pm$ 9.1\% (0.51$\times$) & sub-uniform density \\
+QRS mass (8.0\% width) & 4.0\% $\pm$ 4.2\% (0.50$\times$) & 3.5\% $\pm$ 4.2\% (0.44$\times$) & highest spatial density \\
+Stage-A QRS mass (16.0\% width) & 17.7\% $\pm$ 19.7\% & 14.9\% $\pm$ 17.7\% & Pan--Tompkins window \\
+T-wave mass (30.0\% width) & 14.9\% $\pm$ 15.7\% (0.50$\times$) & 12.4\% $\pm$ 14.4\% (0.41$\times$) & wide window (300 ms) \\
+\bottomrule
+\end{tabular}
+\end{table}

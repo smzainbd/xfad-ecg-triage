@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Deconfounded saliency-matching knowledge distillation comparison on MIT-BIH DS2 across fixed-beat-pool swap, validation-rate-matched, and test-volume-matched operating points.}
+\label{tab:ablation_deconfounded}
+\begin{tabular}{lllll}
+\toprule
+Evaluation Arm & DS2 Alarms (False) & Stage A+B FA Red.\ \% (95\% CI) & Stage A+B Loss \% & SQI-Only FA Red.\ \% \\
+\midrule
+Baseline KD Student & 12 (4) & 0.0\% (0.0--0.0) & 37.50\% & 0.0\% \\
++ Saliency KD (unadjusted) & 20 (4) & 0.0\% (0.0--0.0) & 0.00\% & 0.0\% \\
+Protocol A: Fixed-Beat-Pool Saliency Swap (identical 2,850 baseline alarms) & 12 (4) & 0.0\% (0.0--0.0) & 0.00\% & 0.0\% \\
+Protocol B: Validation-Rate-Matched (n_val=815 threshold transferred to DS2) & 13 (2) & 0.0\% (0.0--0.0) & 18.18\% & 0.0\% \\
+Protocol C: Exact DS2 Volume-Matched (n_test=2,850 alarms) & 12 (2) & 0.0\% (0.0--0.0) & 20.00\% & 0.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}

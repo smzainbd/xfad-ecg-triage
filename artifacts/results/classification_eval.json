@@ -1,0 +1,103 @@
+{
+  "dry_run": false,
+  "student_variant": "baseline",
+  "sensitivity_budget": 0.02,
+  "mitbih_ds2": {
+    "dataset": "mitbih_ds2",
+    "n_samples": 49687,
+    "n_groups": 22,
+    "patient_level_ci": true,
+    "student": {
+      "accuracy": 0.8742125706925352,
+      "macro_f1": 0.2570760613480104,
+      "abnormal_recall": 0.20102714600146734,
+      "auroc_abnormal": 0.7822784039356265,
+      "accuracy_mean_ci": [
+        0.8770310911922914,
+        0.8117555515652122,
+        0.9308613057546102
+      ]
+    },
+    "teacher": {
+      "accuracy": 0.7817940306317548,
+      "macro_f1": 0.36180784498315743,
+      "abnormal_recall": 0.5885913426265591,
+      "auroc_abnormal": 0.8333453207668872,
+      "accuracy_mean_ci": [
+        0.7814743724225361,
+        0.661545349097495,
+        0.887326132566633
+      ]
+    },
+    "delong": {
+      "auc_a": 0.7822784039356265,
+      "auc_b": 0.8333453207668872,
+      "delta_auc": -0.051066916831260634,
+      "std_error": 0.002411538086484925,
+      "z": -21.176077258516838,
+      "p_value": 1.587116722276558e-99
+    },
+    "mcnemar_accuracy_p": 0.0,
+    "holm_bonferroni": {
+      "mcnemar_accuracy": {
+        "p_value": 0.0,
+        "alpha_adj": 0.025,
+        "significant": true
+      },
+      "delong_auroc": {
+        "p_value": 1.587116722276558e-99,
+        "alpha_adj": 0.05,
+        "significant": true
+      }
+    }
+  },
+  "ptbxl_fold10": {
+    "dataset": "ptbxl_fold10",
+    "n_samples": 2098,
+    "n_groups": 1823,
+    "patient_level_ci": true,
+    "student": {
+      "accuracy": 0.6754051477597712,
+      "macro_f1": 0.16694930982473818,
+      "abnormal_recall": 0.32075471698113206,
+      "auroc_abnormal": 0.6675979463943554,
+      "accuracy_mean_ci": [
+        0.6756499252574021,
+        0.655123339658444,
+        0.6978313253012048
+      ]
+    },
+    "teacher": {
+      "accuracy": 0.6048617731172545,
+      "macro_f1": 0.42537870268575656,
+      "abnormal_recall": 0.9056603773584906,
+      "auroc_abnormal": 0.8907908974098872,
+      "accuracy_mean_ci": [
+        0.6051576116175443,
+        0.5841584158415841,
+        0.626603325415677
+      ]
+    },
+    "delong": {
+      "auc_a": 0.6675979463943554,
+      "auc_b": 0.8907908974098872,
+      "delta_auc": -0.22319295101553172,
+      "std_error": 0.01391274828220119,
+      "z": -16.042333727913856,
+      "p_value": 6.467752119184976e-58
+    },
+    "mcnemar_accuracy_p": 1.577157786591954e-07,
+    "holm_bonferroni": {
+      "delong_auroc": {
+        "p_value": 6.467752119184976e-58,
+        "alpha_adj": 0.025,
+        "significant": true
+      },
+      "mcnemar_accuracy": {
+        "p_value": 1.577157786591954e-07,
+        "alpha_adj": 0.05,
+        "significant": true
+      }
+    }
+  }
+}

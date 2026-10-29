@@ -1,0 +1,101 @@
+{
+  "dry_run": false,
+  "student_variant": "saliency",
+  "max_epochs": 25,
+  "early_stopping_patience": 5,
+  "best_val_kd": 2.210205392404036,
+  "best_epoch": 10,
+  "stopped_epoch": 15,
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_kd": 4.11008471681138,
+      "val_kd": 3.6637028275114116,
+      "mean_saliency_loss": 0.09867293196429318
+    },
+    {
+      "epoch": 2,
+      "train_kd": 2.8720599780064573,
+      "val_kd": 3.7105893872000952,
+      "mean_saliency_loss": 0.08132113483752135
+    },
+    {
+      "epoch": 3,
+      "train_kd": 2.5210743494360166,
+      "val_kd": 4.752776846741185,
+      "mean_saliency_loss": 0.07547242086763165
+    },
+    {
+      "epoch": 4,
+      "train_kd": 2.273925367416991,
+      "val_kd": 3.0220089608972724,
+      "mean_saliency_loss": 0.07220762207424233
+    },
+    {
+      "epoch": 5,
+      "train_kd": 2.10247674505067,
+      "val_kd": 2.885333097342289,
+      "mean_saliency_loss": 0.07166392395818189
+    },
+    {
+      "epoch": 6,
+      "train_kd": 1.9539993806483629,
+      "val_kd": 2.681717431906498,
+      "mean_saliency_loss": 0.06879876199897252
+    },
+    {
+      "epoch": 7,
+      "train_kd": 1.8246569560961126,
+      "val_kd": 2.7613799571990967,
+      "mean_saliency_loss": 0.068538136780262
+    },
+    {
+      "epoch": 8,
+      "train_kd": 1.730560537526816,
+      "val_kd": 2.673784335454305,
+      "mean_saliency_loss": 0.06585142534835257
+    },
+    {
+      "epoch": 9,
+      "train_kd": 1.6499437152659484,
+      "val_kd": 2.500840046189048,
+      "mean_saliency_loss": 0.06485845215137014
+    },
+    {
+      "epoch": 10,
+      "train_kd": 1.5733940923168632,
+      "val_kd": 2.210205392404036,
+      "mean_saliency_loss": 0.06562428240143754
+    },
+    {
+      "epoch": 11,
+      "train_kd": 1.51552298903012,
+      "val_kd": 2.5287095199931753,
+      "mean_saliency_loss": 0.06361146953962601
+    },
+    {
+      "epoch": 12,
+      "train_kd": 1.4798518559778597,
+      "val_kd": 2.4824612682515923,
+      "mean_saliency_loss": 0.06285707139810229
+    },
+    {
+      "epoch": 13,
+      "train_kd": 1.4382702946209636,
+      "val_kd": 3.001614491144816,
+      "mean_saliency_loss": 0.062358141965285906
+    },
+    {
+      "epoch": 14,
+      "train_kd": 1.382479903815817,
+      "val_kd": 2.4242466146295722,
+      "mean_saliency_loss": 0.060755559345955175
+    },
+    {
+      "epoch": 15,
+      "train_kd": 1.3483245152937595,
+      "val_kd": 2.397876421610514,
+      "mean_saliency_loss": 0.0604547759086007
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "dry_run": false,
+  "student_variant": "baseline",
+  "dataset": "mitbih_ds2",
+  "population": "student alarm events (prediction != normal class)",
+  "thresholds": {
+    "low": 0.522796474263274,
+    "high": 0.6525104133201295,
+    "divergence": 0.5
+  },
+  "baseline_calibration": {
+    "sqi_only": {
+      "threshold": 0.9906911851636516,
+      "fa_reduction": 0.22093023255813954,
+      "sensitivity_loss": 0.019204389574759947
+    },
+    "confidence_only": {
+      "threshold": 0.47951772063970566,
+      "fa_reduction": 0.08139534883720931,
+      "sensitivity_loss": 0.019204389574759947
+    }
+  },
+  "lr_model_fitted": true,
+  "sensitivity_budget": 0.02,
+  "n_groups": 21,
+  "policies": {
+    "no_gate": {
+      "baseline": "no_gate",
+      "n_alarm_events": 2850,
+      "n_false_alarms": 1754,
+      "n_true_alarms": 1096,
+      "gated_false_alarms": 1754,
+      "gated_true_alarms": 1096,
+      "false_alarm_reduction": 0.0,
+      "sensitivity": 1.0,
+      "sensitivity_loss": 0.0,
+      "meets_budget": true,
+      "false_alarm_reduction_ci": [
+        0.0,
+        0.0
+      ],
+      "sensitivity_ci": [
+        1.0,
+        1.0
+      ]
+    },
+    "sqi_only": {
+      "baseline": "sqi_only",
+      "n_alarm_events": 2850,
+      "n_false_alarms": 1754,
+      "n_true_alarms": 1096,
+      "gated_false_alarms": 1172,
+      "gated_true_alarms": 961,
+      "false_alarm_reduction": 0.33181299885974913,
+      "sensitivity": 0.8768248175182481,
+      "sensitivity_loss": 0.12317518248175185,
+      "meets_budget": false,
+      "false_alarm_reduction_ci": [
+        0.2155370331455448,
+        0.477938260179799
+      ],
+      "sensitivity_ci": [
+        0.7041219723183392,
+        0.9618803499660733
+      ]
+    },
+    "confidence_only": {
+      "baseline": "confidence_only",
+      "n_alarm_events": 2850,
+      "n_false_alarms": 1754,
+      "n_true_alarms": 1096,
+      "gated_false_alarms": 1503,
+      "gated_true_alarms": 990,
+      "false_alarm_reduction": 0.14310148232611175,
+      "sensitivity": 0.9032846715328468,
+      "sensitivity_loss": 0.09671532846715325,
+      "meets_budget": false,
+      "false_alarm_reduction_ci": [
+        0.06375090909605434,
+        0.23885726142670094
+      ],
+      "sensitivity_ci": [
+        0.8532855391877842,
+        0.9553435077852803
+      ]
+    },
+    "stage_a_offline": {
+      "baseline": "stage_a_offline",
+      "n_alarm_events": 2850,
+      "n_false_alarms": 1754,
+      "n_true_alarms": 1096,
+      "gated_false_alarms": 1370,
+      "gated_true_alarms": 960,
+      "false_alarm_reduction": 0.21892816419612315,
+      "sensitivity": 0.8759124087591241,
+      "sensitivity_loss": 0.12408759124087587,
+      "meets_budget": false,
+      "false_alarm_reduction_ci": [
+        0.09889399536122324,
+        0.41209938694856785
+      ],
+      "sensitivity_ci": [
+        0.7600273413140413,
+        0.9862444045561317
+      ]
+    },
+    "stage_a_plus_b": {
+      "baseline": "stage_a_plus_b",
+      "n_alarm_events": 2850,
+      "n_false_alarms": 1754,
+      "n_true_alarms": 1096,
+      "gated_false_alarms": 1216,
+      "gated_true_alarms": 947,
+      "false_alarm_reduction": 0.30672748004561,
+      "sensitivity": 0.8640510948905109,
+      "sensitivity_loss": 0.1359489051094891,
+      "meets_budget": false,
+      "false_alarm_reduction_ci": [
+        0.17011874621147421,
+        0.4981127901436252
+      ],
+      "sensitivity_ci": [
+        0.7450724987895359,
+        0.9828173646657067
+      ]
+    }
+  }
+}

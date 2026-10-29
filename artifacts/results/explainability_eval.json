@@ -1,0 +1,50 @@
+{
+  "dry_run": false,
+  "student_variant": "baseline",
+  "sanity_checks": {
+    "n_examples": 50,
+    "spearman": {
+      "mean": 0.022955716699361802,
+      "median": 0.07049084827303886,
+      "max": 0.5248645544052124,
+      "status": "pass"
+    },
+    "cosine": {
+      "mean": 0.42880688346922397,
+      "median": 0.4846833497285843,
+      "max": 0.8131825923919678,
+      "status": "inconclusive"
+    }
+  },
+  "faithfulness": {
+    "n_examples": 50,
+    "deletion_steps": 50,
+    "qrs_window_samples": [
+      115,
+      135
+    ],
+    "deletion_auc_gradcam": {
+      "mean": 0.6915034406928018,
+      "sd": 0.26816116208468704
+    },
+    "deletion_auc_random": {
+      "mean": 0.863907688430741,
+      "sd": 0.2806326218204301
+    },
+    "pointing_ratios": {
+      "p_ratio": {
+        "mean": 0.12984911212948638,
+        "sd": 0.05227840610770054
+      },
+      "qrs_ratio": {
+        "mean": 0.2209553429871171,
+        "sd": 0.055258561354590056
+      },
+      "t_ratio": {
+        "mean": 0.24090479811501894,
+        "sd": 0.11109359397348566
+      }
+    },
+    "deletion_auc_advantage_over_random": 0.17240424773793916
+  }
+}

@@ -1,0 +1,368 @@
+{
+  "mechanism_specificity_shift": {
+    "baseline_student_ds2": {
+      "mean_normal_prob_on_true_normal": 0.2674,
+      "mean_normal_logit_margin_on_true_normal": 0.0092,
+      "mean_softmax_entropy": 1.5422,
+      "predicted_abnormal_rate_pct": 10.0,
+      "false_positive_rate_on_normal_beats_pct": 25.0
+    },
+    "saliency_student_ds2": {
+      "mean_normal_prob_on_true_normal": 0.0,
+      "mean_normal_logit_margin_on_true_normal": -12.5591,
+      "mean_softmax_entropy": 0.1648,
+      "predicted_abnormal_rate_pct": 100.0,
+      "false_positive_rate_on_normal_beats_pct": 100.0
+    }
+  },
+  "protocol_a_fixed_beat_pool_swap": {
+    "setting": "Protocol A: Fixed-Beat-Pool Saliency Swap (identical 2,850 baseline alarms)",
+    "val_n_alarms": 12,
+    "val_n_false_alarms": 4,
+    "test_n_alarms": 12,
+    "test_n_false_alarms": 4,
+    "test_n_true_alarms": 8,
+    "calibrated_thresholds": {
+      "low": 0.9122493505477904,
+      "high": 0.9126536415348053
+    },
+    "val_fa_reduction_pct": 0.0,
+    "val_sensitivity_loss_pct": 0.0,
+    "policies": {
+      "no_gate": {
+        "baseline": "no_gate",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sqi_only": {
+        "baseline": "sqi_only",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "confidence_only": {
+        "baseline": "confidence_only",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 7,
+        "false_alarm_reduction": 0.5,
+        "sensitivity": 0.875,
+        "sensitivity_loss": 0.125,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          1.0
+        ],
+        "sensitivity_ci": [
+          0.6666666666666666,
+          1.0
+        ]
+      },
+      "stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "protocol_b_val_rate_matched": {
+    "setting": "Protocol B: Validation-Rate-Matched (n_val=815 threshold transferred to DS2)",
+    "val_n_alarms": 12,
+    "val_n_false_alarms": 3,
+    "test_n_alarms": 13,
+    "test_n_false_alarms": 2,
+    "test_n_true_alarms": 11,
+    "test_fa_rate_pct": 15.38,
+    "calibrated_thresholds": {
+      "low": 0.5851588571038862,
+      "high": 0.6776277756690978
+    },
+    "val_fa_reduction_pct": 66.67,
+    "val_sensitivity_loss_pct": 0.0,
+    "policies": {
+      "no_gate": {
+        "baseline": "no_gate",
+        "n_alarm_events": 13,
+        "n_false_alarms": 2,
+        "n_true_alarms": 11,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 11,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sqi_only": {
+        "baseline": "sqi_only",
+        "n_alarm_events": 13,
+        "n_false_alarms": 2,
+        "n_true_alarms": 11,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 11,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "confidence_only": {
+        "baseline": "confidence_only",
+        "n_alarm_events": 13,
+        "n_false_alarms": 2,
+        "n_true_alarms": 11,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 10,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.9090909090909091,
+        "sensitivity_loss": 0.09090909090909094,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.7129545454545454,
+          1.0
+        ]
+      },
+      "stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 13,
+        "n_false_alarms": 2,
+        "n_true_alarms": 11,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 9,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.8181818181818182,
+        "sensitivity_loss": 0.18181818181818177,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.5215909090909091,
+          1.0
+        ]
+      },
+      "stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 13,
+        "n_false_alarms": 2,
+        "n_true_alarms": 11,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 9,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.8181818181818182,
+        "sensitivity_loss": 0.18181818181818177,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.5215909090909091,
+          1.0
+        ]
+      }
+    }
+  },
+  "protocol_c_ds2_volume_matched": {
+    "setting": "Protocol C: Exact DS2 Volume-Matched (n_test=2,850 alarms)",
+    "val_n_alarms": 12,
+    "val_n_false_alarms": 3,
+    "test_n_alarms": 12,
+    "test_n_false_alarms": 2,
+    "test_n_true_alarms": 10,
+    "test_fa_rate_pct": 16.67,
+    "calibrated_thresholds": {
+      "low": 0.5851588571038862,
+      "high": 0.6776277756690978
+    },
+    "val_fa_reduction_pct": 66.67,
+    "val_sensitivity_loss_pct": 0.0,
+    "policies": {
+      "no_gate": {
+        "baseline": "no_gate",
+        "n_alarm_events": 12,
+        "n_false_alarms": 2,
+        "n_true_alarms": 10,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 10,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "sqi_only": {
+        "baseline": "sqi_only",
+        "n_alarm_events": 12,
+        "n_false_alarms": 2,
+        "n_true_alarms": 10,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 10,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "confidence_only": {
+        "baseline": "confidence_only",
+        "n_alarm_events": 12,
+        "n_false_alarms": 2,
+        "n_true_alarms": 10,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 10,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 2,
+        "n_true_alarms": 10,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.8,
+        "sensitivity_loss": 0.19999999999999996,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.5687500000000001,
+          1.0
+        ]
+      },
+      "stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 2,
+        "n_true_alarms": 10,
+        "gated_false_alarms": 2,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.8,
+        "sensitivity_loss": 0.19999999999999996,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.5687500000000001,
+          1.0
+        ]
+      }
+    }
+  }
+}

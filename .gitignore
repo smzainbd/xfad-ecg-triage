@@ -1,0 +1,13 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Raw PhysioNet datasets & large local tensor caches (downloaded automatically via NB00)
+data/raw/
+data/processed/
+data/cache/
+artifacts/_dryrun/
+.DS_Store

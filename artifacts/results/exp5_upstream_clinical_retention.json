@@ -1,0 +1,362 @@
+{
+  "per_class_classification_ds2": {
+    "teacher_a": {
+      "N": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "S": {
+        "support": 2,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "V": {
+        "support": 5,
+        "exact_class_precision_pct": 25.0,
+        "exact_class_recall_pct": 100.0,
+        "exact_class_f1_pct": 40.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "F": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "Q": {
+        "support": 5,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      }
+    },
+    "student_baseline": {
+      "N": {
+        "support": 4,
+        "exact_class_precision_pct": 16.67,
+        "exact_class_recall_pct": 75.0,
+        "exact_class_f1_pct": 27.27,
+        "flagged_as_any_alarm_pct": 25.0
+      },
+      "S": {
+        "support": 2,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      },
+      "V": {
+        "support": 5,
+        "exact_class_precision_pct": 50.0,
+        "exact_class_recall_pct": 20.0,
+        "exact_class_f1_pct": 28.57,
+        "flagged_as_any_alarm_pct": 20.0
+      },
+      "F": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      },
+      "Q": {
+        "support": 5,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      }
+    },
+    "student_saliency": {
+      "N": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "S": {
+        "support": 2,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "V": {
+        "support": 5,
+        "exact_class_precision_pct": 25.0,
+        "exact_class_recall_pct": 100.0,
+        "exact_class_f1_pct": 40.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "F": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "Q": {
+        "support": 5,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      }
+    }
+  },
+  "ptbxl_fold10_per_class": {
+    "teacher_b": {
+      "SR": {
+        "support": 2,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "AFIB": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "STACH": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "SARRH": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "SBRAD": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "PACE": {
+        "support": 0,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      },
+      "SVARR": {
+        "support": 3,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "BIGU": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "AFLT": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "SVTAC": {
+        "support": 0,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      },
+      "PSVT": {
+        "support": 2,
+        "exact_class_precision_pct": 10.0,
+        "exact_class_recall_pct": 100.0,
+        "exact_class_f1_pct": 18.18,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "TRIGU": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      }
+    },
+    "student_baseline": {
+      "SR": {
+        "support": 2,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "AFIB": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "STACH": {
+        "support": 1,
+        "exact_class_precision_pct": 5.0,
+        "exact_class_recall_pct": 100.0,
+        "exact_class_f1_pct": 9.52,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "SARRH": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "SBRAD": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "PACE": {
+        "support": 0,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      },
+      "SVARR": {
+        "support": 3,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "BIGU": {
+        "support": 4,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "AFLT": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "SVTAC": {
+        "support": 0,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 0.0
+      },
+      "PSVT": {
+        "support": 2,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      },
+      "TRIGU": {
+        "support": 1,
+        "exact_class_precision_pct": 0.0,
+        "exact_class_recall_pct": 0.0,
+        "exact_class_f1_pct": 0.0,
+        "flagged_as_any_alarm_pct": 100.0
+      }
+    }
+  },
+  "end_to_end_abnormal_retention_baseline_student": {
+    "S": {
+      "total_true_beats": 2,
+      "raised_by_student": 0,
+      "upstream_alarm_recall_pct": 0.0,
+      "delivered_after_stage_ab": 2,
+      "gate_retention_stage_ab_pct": 200.0,
+      "end_to_end_stage_ab_pct": 100.0,
+      "end_to_end_sqi_only_pct": 100.0
+    },
+    "V": {
+      "total_true_beats": 5,
+      "raised_by_student": 1,
+      "upstream_alarm_recall_pct": 20.0,
+      "delivered_after_stage_ab": 4,
+      "gate_retention_stage_ab_pct": 400.0,
+      "end_to_end_stage_ab_pct": 80.0,
+      "end_to_end_sqi_only_pct": 80.0
+    },
+    "F": {
+      "total_true_beats": 4,
+      "raised_by_student": 0,
+      "upstream_alarm_recall_pct": 0.0,
+      "delivered_after_stage_ab": 1,
+      "gate_retention_stage_ab_pct": 100.0,
+      "end_to_end_stage_ab_pct": 25.0,
+      "end_to_end_sqi_only_pct": 25.0
+    },
+    "Q": {
+      "total_true_beats": 5,
+      "raised_by_student": 0,
+      "upstream_alarm_recall_pct": 0.0,
+      "delivered_after_stage_ab": 2,
+      "gate_retention_stage_ab_pct": 200.0,
+      "end_to_end_stage_ab_pct": 40.0,
+      "end_to_end_sqi_only_pct": 60.0
+    },
+    "ALL_ABNORMAL_S_V_F_Q": {
+      "total_true_beats": 16,
+      "raised_by_student": 1,
+      "upstream_alarm_recall_pct": 6.25,
+      "delivered_after_stage_ab": 9,
+      "gate_retention_stage_ab_pct": 900.0,
+      "end_to_end_stage_ab_pct": 56.25,
+      "end_to_end_sqi_only_pct": 62.5
+    }
+  },
+  "sustained_multi_beat_alarm_proxy_ds2": {
+    "k_2_consecutive_alarms": {
+      "min_consecutive": 2,
+      "n_episodes": 0
+    },
+    "k_3_consecutive_alarms": {
+      "min_consecutive": 3,
+      "n_episodes": 0
+    }
+  },
+  "computational_complexity_audit": {
+    "parameter_counts": {
+      "student_multitask": 52049,
+      "teacher_a_mitbih": 55285,
+      "teacher_b_ptbxl": 696652,
+      "compression_ratio_vs_teachers": 14.45
+    },
+    "latency_per_alarm_ms": {
+      "device": "cpu",
+      "student_forward_ms": 2.312,
+      "sqi_only_gate_ms": 1.154,
+      "stage_a_gradcam_plus_qrs_ms": 5.836,
+      "stage_b_teacher_escalation_ms": 3.95,
+      "stage_ab_overhead_vs_sqi_only_x": 5.72
+    }
+  }
+}

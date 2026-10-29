@@ -1,0 +1,181 @@
+{
+  "loro_ds1_val_5records": {
+    "pool_name": "DS1_5_val_records",
+    "n_records": 5,
+    "n_total_alarms": 12,
+    "high_threshold_summary": {
+      "mean": 0.653,
+      "sd": 0.0,
+      "median": 0.653,
+      "q75_conservative": 0.653,
+      "q90_conservative": 0.653,
+      "max": 0.653
+    },
+    "low_threshold_mean": 0.523,
+    "oof_pooled_fa_reduction_pct": 0.0,
+    "oof_pooled_sensitivity_loss_pct": 0.0,
+    "pct_folds_meeting_budget": 0.0,
+    "folds": []
+  },
+  "loro_ds1_all_22records": {
+    "pool_name": "DS1_all_22_records",
+    "n_records": 12,
+    "n_total_alarms": 19,
+    "high_threshold_summary": {
+      "mean": 0.4152662652392585,
+      "sd": 0.004564441608390888,
+      "median": 0.4144032667648116,
+      "q75_conservative": 0.41900587958055646,
+      "q90_conservative": 0.42078116631371615,
+      "max": 0.42131600739976627
+    },
+    "low_threshold_mean": 0.404648870767872,
+    "oof_pooled_fa_reduction_pct": 0.0,
+    "oof_pooled_sensitivity_loss_pct": 0.0,
+    "pct_folds_meeting_budget": 100.0,
+    "folds": [
+      {
+        "held_out_record": "112",
+        "n_alarms": 1,
+        "n_fa": 0,
+        "n_ta": 1,
+        "calibrated_high": 0.42131600739976627,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "114",
+        "n_alarms": 1,
+        "n_fa": 0,
+        "n_ta": 1,
+        "calibrated_high": 0.41204166065467807,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "115",
+        "n_alarms": 1,
+        "n_fa": 0,
+        "n_ta": 1,
+        "calibrated_high": 0.4099548905492078,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "118",
+        "n_alarms": 1,
+        "n_fa": 0,
+        "n_ta": 1,
+        "calibrated_high": 0.4111362721452324,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "203",
+        "n_alarms": 1,
+        "n_fa": 0,
+        "n_ta": 1,
+        "calibrated_high": 0.4144032667648116,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "215",
+        "n_alarms": 2,
+        "n_fa": 0,
+        "n_ta": 2,
+        "calibrated_high": 0.41758715357143017,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      },
+      {
+        "held_out_record": "230",
+        "n_alarms": 1,
+        "n_fa": 0,
+        "n_ta": 1,
+        "calibrated_high": 0.42042460558968275,
+        "oof_fa_reduction_pct": 0.0,
+        "oof_sensitivity_loss_pct": 0.0,
+        "meets_2pct_budget": true
+      }
+    ]
+  },
+  "ds2_transfer_comparison": [
+    {
+      "scheme": "Original 5-Record DS1 Val (Pre-registered)",
+      "low_threshold": 0.9125,
+      "high_threshold": 0.9127,
+      "ds2_stage_a_fa_red_pct": 50.0,
+      "ds2_stage_a_sens_loss_pct": 0.0,
+      "ds2_stage_ab_fa_red_pct": 50.0,
+      "ds2_stage_ab_fa_red_ci95": [
+        0.0,
+        100.0
+      ],
+      "ds2_stage_ab_sens_loss_pct": 0.0,
+      "meets_2pct_budget_on_ds2": true
+    },
+    {
+      "scheme": "LORO 5-Record Conservative (90th pct high threshold)",
+      "low_threshold": 0.9125,
+      "high_threshold": 0.653,
+      "ds2_stage_a_fa_red_pct": 50.0,
+      "ds2_stage_a_sens_loss_pct": 12.5,
+      "ds2_stage_ab_fa_red_pct": 50.0,
+      "ds2_stage_ab_fa_red_ci95": [
+        0.0,
+        100.0
+      ],
+      "ds2_stage_ab_sens_loss_pct": 12.5,
+      "meets_2pct_budget_on_ds2": false
+    },
+    {
+      "scheme": "Pooled 22-Record Full DS1 Calibration",
+      "low_threshold": 0.4041,
+      "high_threshold": 0.4145,
+      "ds2_stage_a_fa_red_pct": 0.0,
+      "ds2_stage_a_sens_loss_pct": 37.5,
+      "ds2_stage_ab_fa_red_pct": 0.0,
+      "ds2_stage_ab_fa_red_ci95": [
+        0.0,
+        0.0
+      ],
+      "ds2_stage_ab_sens_loss_pct": 37.5,
+      "meets_2pct_budget_on_ds2": false
+    },
+    {
+      "scheme": "LORO 22-Record DS1 Conservative (75th pct high threshold)",
+      "low_threshold": 0.4041,
+      "high_threshold": 0.419,
+      "ds2_stage_a_fa_red_pct": 0.0,
+      "ds2_stage_a_sens_loss_pct": 12.5,
+      "ds2_stage_ab_fa_red_pct": 0.0,
+      "ds2_stage_ab_fa_red_ci95": [
+        0.0,
+        0.0
+      ],
+      "ds2_stage_ab_sens_loss_pct": 12.5,
+      "meets_2pct_budget_on_ds2": false
+    },
+    {
+      "scheme": "LORO 22-Record DS1 Conservative (90th pct high threshold)",
+      "low_threshold": 0.4041,
+      "high_threshold": 0.4208,
+      "ds2_stage_a_fa_red_pct": 0.0,
+      "ds2_stage_a_sens_loss_pct": 12.5,
+      "ds2_stage_ab_fa_red_pct": 0.0,
+      "ds2_stage_ab_fa_red_ci95": [
+        0.0,
+        0.0
+      ],
+      "ds2_stage_ab_sens_loss_pct": 12.5,
+      "meets_2pct_budget_on_ds2": false
+    }
+  ]
+}

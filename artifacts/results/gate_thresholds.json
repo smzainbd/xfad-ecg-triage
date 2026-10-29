@@ -1,0 +1,38 @@
+{
+  "low_threshold": 0.522796474263274,
+  "high_threshold": 0.6525104133201295,
+  "divergence_threshold": 0.5,
+  "sensitivity_budget": 0.02,
+  "used_fallback": false,
+  "lr_model_fitted": true,
+  "lr_min_false_alarms": 50,
+  "student_variant": "baseline",
+  "baseline_calibration": {
+    "sqi_only": {
+      "threshold": 0.9906911851636516,
+      "fa_reduction": 0.22093023255813954,
+      "sensitivity_loss": 0.019204389574759947
+    },
+    "confidence_only": {
+      "threshold": 0.47951772063970566,
+      "fa_reduction": 0.08139534883720931,
+      "sensitivity_loss": 0.019204389574759947
+    }
+  },
+  "calibration": {
+    "dry_run": false,
+    "population": "student alarm events on MIT-BIH DS1 validation records",
+    "records": [
+      119,
+      124,
+      215,
+      220,
+      223
+    ],
+    "n_alarm_events": 815,
+    "n_false_alarms": 86,
+    "fa_reduction": 0.18604651162790697,
+    "sensitivity_loss": 0.01783264746227709,
+    "escalation_rate": 0.1950920245398773
+  }
+}

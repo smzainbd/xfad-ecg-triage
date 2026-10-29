@@ -1,0 +1,640 @@
+{
+  "feature_discrimination_and_shift": {
+    "1-QRS_overlap": {
+      "val_auroc_for_fa": 0.5,
+      "test_auroc_for_fa": 0.6094,
+      "auroc_transfer_delta": 0.1094,
+      "val_point_biserial_r": 0.0044,
+      "test_point_biserial_r": 0.2897,
+      "ks_shift_val_vs_test_all_alarms": {
+        "stat": 0.1667,
+        "p_value": 0.9984852944874484
+      },
+      "ks_shift_val_vs_test_true_alarms": {
+        "stat": 0.25,
+        "p_value": 0.98010878010878
+      },
+      "val_mean_fa_vs_ta": [
+        0.876,
+        0.875
+      ],
+      "test_mean_fa_vs_ta": [
+        0.96,
+        0.861
+      ]
+    },
+    "1-SQI": {
+      "val_auroc_for_fa": 0.625,
+      "test_auroc_for_fa": 0.6875,
+      "auroc_transfer_delta": 0.0625,
+      "val_point_biserial_r": 0.2817,
+      "test_point_biserial_r": 0.3354,
+      "ks_shift_val_vs_test_all_alarms": {
+        "stat": 0.1667,
+        "p_value": 0.9984852944874484
+      },
+      "ks_shift_val_vs_test_true_alarms": {
+        "stat": 0.125,
+        "p_value": 1.0
+      },
+      "val_mean_fa_vs_ta": [
+        0.953,
+        0.827
+      ],
+      "test_mean_fa_vs_ta": [
+        1.0,
+        0.868
+      ]
+    },
+    "1-confidence": {
+      "val_auroc_for_fa": 0.5625,
+      "test_auroc_for_fa": 0.5625,
+      "auroc_transfer_delta": 0.0,
+      "val_point_biserial_r": 0.2357,
+      "test_point_biserial_r": -0.0528,
+      "ks_shift_val_vs_test_all_alarms": {
+        "stat": 0.25,
+        "p_value": 0.8689816711757754
+      },
+      "ks_shift_val_vs_test_true_alarms": {
+        "stat": 0.25,
+        "p_value": 0.98010878010878
+      },
+      "val_mean_fa_vs_ta": [
+        0.737,
+        0.736
+      ],
+      "test_mean_fa_vs_ta": [
+        0.736,
+        0.736
+      ]
+    }
+  },
+  "stage_a_subset_ablations": {
+    "full_3feat": {
+      "features": [
+        "1-QRS overlap",
+        "1-SQI",
+        "1-confidence"
+      ],
+      "coefficients": {
+        "1-QRS overlap": -0.18537588630218166,
+        "1-SQI": 0.4832872573432782,
+        "1-confidence": -0.34468093938814737
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.39741369460630716,
+        "high": 0.4017572671051213
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 5,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.625,
+        "sensitivity_loss": 0.375,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.3333333333333333,
+          0.875
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 5,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.625,
+        "sensitivity_loss": 0.375,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.3333333333333333,
+          0.875
+        ]
+      }
+    },
+    "no_saliency_sqi_conf": {
+      "features": [
+        "1-SQI",
+        "1-confidence"
+      ],
+      "coefficients": {
+        "1-SQI": 0.4330475789787815,
+        "1-confidence": -0.5032484865129977
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.3923401997393007,
+        "high": 0.3928508916033691
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 3,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.25,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.9099999999999995
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 3,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.25,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.9099999999999995
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "saliency_sqi": {
+      "features": [
+        "1-QRS overlap",
+        "1-SQI"
+      ],
+      "coefficients": {
+        "1-QRS overlap": -0.36441159817727964,
+        "1-SQI": 0.38016232946054873
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.39979153944040036,
+        "high": 0.40802430476935314
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 5,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.625,
+        "sensitivity_loss": 0.375,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.3333333333333333,
+          0.875
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 5,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 0.625,
+        "sensitivity_loss": 0.375,
+        "meets_budget": false,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          0.3333333333333333,
+          0.875
+        ]
+      }
+    },
+    "saliency_conf": {
+      "features": [
+        "1-QRS overlap",
+        "1-confidence"
+      ],
+      "coefficients": {
+        "1-QRS overlap": 0.002673850522903602,
+        "1-confidence": -0.0028084312518995747
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.3776830386387621,
+        "high": 0.37768690679297795
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 3,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.25,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.9099999999999995
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 3,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.25,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.9099999999999995
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "sqi_only_lr": {
+      "features": [
+        "1-SQI"
+      ],
+      "coefficients": {
+        "1-SQI": 0.034608051513528436
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.3857084858787124,
+        "high": 0.3857084858787124
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "saliency_only_lr": {
+      "features": [
+        "1-QRS overlap"
+      ],
+      "coefficients": {
+        "1-QRS overlap": 0.00040873902011751836
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.3776377287920353,
+        "high": 0.3776377287920353
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "conf_only_lr": {
+      "features": [
+        "1-confidence"
+      ],
+      "coefficients": {
+        "1-confidence": 0.00032140225517119823
+      },
+      "intercept": -0.5,
+      "thresholds": {
+        "low": 0.3775963793805342,
+        "high": 0.377597408912504
+      },
+      "val_fa_reduction_pct": 0.0,
+      "val_sensitivity_loss_pct": 0.0,
+      "test_stage_a_offline": {
+        "baseline": "stage_a_offline",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "test_stage_a_plus_b": {
+        "baseline": "stage_a_plus_b",
+        "n_alarm_events": 12,
+        "n_false_alarms": 4,
+        "n_true_alarms": 8,
+        "gated_false_alarms": 4,
+        "gated_true_alarms": 8,
+        "false_alarm_reduction": 0.0,
+        "sensitivity": 1.0,
+        "sensitivity_loss": 0.0,
+        "meets_budget": true,
+        "false_alarm_reduction_ci": [
+          0.0,
+          0.0
+        ],
+        "sensitivity_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "paired_bootstrap_and_tost_tests_ds2": {
+    "stage_ab_vs_sqi_raw": {
+      "fa_reduction_diff_pp": {
+        "mean": 0.0,
+        "sd_boot": 0.0,
+        "ci90_tost": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided_diff": 1.0,
+        "p_tost_equivalence_5pp": 0.0,
+        "p_tost_equivalence_10pp": 0.0,
+        "equivalent_at_5pp": true,
+        "prob_policy1_beats_policy2": 0.0,
+        "prob_policy1_beats_policy2_by_5pp": 0.0
+      },
+      "sensitivity_loss_diff_pp": {
+        "mean": 40.84,
+        "ci95": [
+          12.5,
+          66.67
+        ],
+        "p_two_sided_diff": 0.02
+      }
+    },
+    "marginal_stage_b_over_stage_a": {
+      "fa_reduction_diff_pp": {
+        "mean": 0.0,
+        "sd_boot": 0.0,
+        "ci90_tost": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided_diff": 1.0,
+        "p_tost_equivalence_5pp": 0.0,
+        "p_tost_equivalence_10pp": 0.0,
+        "equivalent_at_5pp": true,
+        "prob_policy1_beats_policy2": 0.0,
+        "prob_policy1_beats_policy2_by_5pp": 0.0
+      },
+      "sensitivity_loss_diff_pp": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided_diff": 1.0
+      }
+    },
+    "marginal_saliency_in_stage_a (full_vs_sqi_conf)": {
+      "fa_reduction_diff_pp": {
+        "mean": -26.67,
+        "sd_boot": 25.15,
+        "ci90_tost": [
+          -66.67,
+          0.0
+        ],
+        "ci95": [
+          -91.0,
+          0.0
+        ],
+        "p_two_sided_diff": 0.6869,
+        "p_tost_equivalence_5pp": 0.6566,
+        "p_tost_equivalence_10pp": 0.6566,
+        "equivalent_at_5pp": false,
+        "prob_policy1_beats_policy2": 0.0,
+        "prob_policy1_beats_policy2_by_5pp": 0.0
+      },
+      "sensitivity_loss_diff_pp": {
+        "mean": 40.84,
+        "ci95": [
+          12.5,
+          66.67
+        ],
+        "p_two_sided_diff": 0.02
+      }
+    },
+    "marginal_saliency_in_stage_ab (full_vs_sqi_conf)": {
+      "fa_reduction_diff_pp": {
+        "mean": -26.67,
+        "sd_boot": 25.15,
+        "ci90_tost": [
+          -66.67,
+          0.0
+        ],
+        "ci95": [
+          -91.0,
+          0.0
+        ],
+        "p_two_sided_diff": 0.6869,
+        "p_tost_equivalence_5pp": 0.6566,
+        "p_tost_equivalence_10pp": 0.6566,
+        "equivalent_at_5pp": false,
+        "prob_policy1_beats_policy2": 0.0,
+        "prob_policy1_beats_policy2_by_5pp": 0.0
+      },
+      "sensitivity_loss_diff_pp": {
+        "mean": 40.84,
+        "ci95": [
+          12.5,
+          66.67
+        ],
+        "p_two_sided_diff": 0.02
+      }
+    },
+    "marginal_sqi_in_stage_ab (full_vs_sal_conf)": {
+      "fa_reduction_diff_pp": {
+        "mean": -26.67,
+        "sd_boot": 25.15,
+        "ci90_tost": [
+          -66.67,
+          0.0
+        ],
+        "ci95": [
+          -91.0,
+          0.0
+        ],
+        "p_two_sided_diff": 0.6869,
+        "p_tost_equivalence_5pp": 0.6566,
+        "p_tost_equivalence_10pp": 0.6566,
+        "equivalent_at_5pp": false,
+        "prob_policy1_beats_policy2": 0.0,
+        "prob_policy1_beats_policy2_by_5pp": 0.0
+      },
+      "sensitivity_loss_diff_pp": {
+        "mean": 40.84,
+        "ci95": [
+          12.5,
+          66.67
+        ],
+        "p_two_sided_diff": 0.02
+      }
+    },
+    "marginal_conf_in_stage_ab (full_vs_sal_sqi)": {
+      "fa_reduction_diff_pp": {
+        "mean": 0.0,
+        "sd_boot": 0.0,
+        "ci90_tost": [
+          0.0,
+          0.0
+        ],
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided_diff": 1.0,
+        "p_tost_equivalence_5pp": 0.0,
+        "p_tost_equivalence_10pp": 0.0,
+        "equivalent_at_5pp": true,
+        "prob_policy1_beats_policy2": 0.0,
+        "prob_policy1_beats_policy2_by_5pp": 0.0
+      },
+      "sensitivity_loss_diff_pp": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "p_two_sided_diff": 1.0
+      }
+    }
+  }
+}
